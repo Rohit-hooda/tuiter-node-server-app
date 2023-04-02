@@ -11,6 +11,4 @@ HelloController(app);
 UserController(app);
 TuitsController(app);
 
-app.listen(4000, () => {
-    console.log('Server started');
-});
+app.listen(process.env.PORT || 4000);
